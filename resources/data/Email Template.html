@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Dear {{Participant.FirstName}} {{Participant.LastName}}, <br />
+    <p>With Respect to your registration in {{Account.Name}}. This Email is to comfirm your participation in the {{Account.Name}} under Plan {{Plan.Name}}.</p>
+    <br />
+    <b> Account Details are</b>
+    <label>Name :</label> {{Participant.FirstName}} {{Participant.LastName}} <br />
+    <label>Email :</label> {{Participant.Email}}<br />
+    <label>Phone :</label> {{Participant.Phone}}<br />
+    <label>Address :</label> <address>
+        {{Participant.AddressLine1}}
+{{Participant.AddressLine2}}
+
+
+
+    </address><br />
+    <label>City :</label>	{{Participant.City}} <br />
+    <label>State :</label>	{{Participant.State}} <br />
+    <label>Zip :</label> {{Participant.Zip}} <br />
+    <p><a href="{{Campaign.Url.ViewNotice}}">Click here</a> to view your notice.</p>
+    <b>Thank you.</b>
+</body>
+</html>
